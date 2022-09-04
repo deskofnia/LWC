@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="ForEach">
+        <template if:true={opportunities.data}>
+            <template for:each={opportunities.data} for:item="opportunity">
+                <h3 key={opportunity.Id}>{opportunity.name}</h3>
+            </template>
+        </template>
+
+        <template if:true={opportunities.error}>
+            {opportunity.error}
+        </template>
+    </lightning-card>
+</template>

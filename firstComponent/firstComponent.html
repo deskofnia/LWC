@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-card ">
+
+        <lightning-input type="text" class="nameField" label="Name" value=""></lightning-input>
+        
+        <div class="slds-float-right">
+            <lightning-input class="ageField " type="text" label="Age" value=""></lightning-input>
+        </div>
+        
+
+
+        <lightning-button class="slds-align_absolute-center slds-button_neutral" onclick={handleWithClick} label="Submit"></lightning-button>
+
+    </div>
+    <div class="slds-card">
+        <h1 class="pg">{nameWithAge}</h1>
+    </div>
+    
+</template>
